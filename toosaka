@@ -1,0 +1,8 @@
+#!cfi
+#
+# TO OSAKA
+#
+Content-Type: text/
+Output-Charset: x-euc-jp
+Filter: /directory of.../nkf -e | /directory of.../osaka
+--
