@@ -294,6 +294,14 @@ def translate(data):
     :rtype: str
     :return: translated string
     """
-    for rule in _HENKAN:
-        data = data.replace(rule[0], rule[1])
-    return data
+    translated = ""
+    while data:
+        for rule in _HENKAN:
+            if data.startswith(rule[0]):
+                translated += rule[1]
+                data = data[len(rule[0]):]
+                break
+        else:
+            translated += data[0]
+            data = data[1:]
+    return translated
