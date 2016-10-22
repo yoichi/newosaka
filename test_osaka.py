@@ -15,6 +15,11 @@ class OsakaTest(unittest.TestCase):
             osaka.translate("ありがとうございます"),
             "おおきにおます")
 
+    def test_honmayaroka(self):
+        self.assertEqual(
+            osaka.translate("ほんとうですか？"),
+            "ホンマやろか？")
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -285,6 +285,7 @@ _HENKAN = [
     ("良い", "ええ"),
     ("例えば", "例あげたろか，たとえばやなあ"),
 ]
+_HENKAN.reverse()
 
 
 def translate(data):
