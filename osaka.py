@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # coding: utf-8
 "translate input string to Osaka dialect."
 
@@ -306,3 +307,9 @@ def translate(data):
             translated += data[0]
             data = data[1:]
     return translated
+
+
+if __name__ == "__main__":
+    import sys
+    for line in sys.stdin:
+        print(translate(line.rstrip("\r\n")))
